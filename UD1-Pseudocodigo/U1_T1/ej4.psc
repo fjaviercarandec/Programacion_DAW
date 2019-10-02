@@ -5,7 +5,7 @@ Algoritmo ejercicio4
 		matriz[i]=AZAR(401)
 		Escribir Sin Saltar matriz[i]," "
 	Fin Para
-	Escribir "¿Que numeros quiere resaltar? (1-Multiplos de 5) o (2-Multiplos de 7)"
+	Escribir "Â¿Que numeros quiere resaltar? (1-Multiplos de 5) o (2-Multiplos de 7)"
 	Leer eleccion
 	Si eleccion=1 Entonces
 		Para i<-0 Hasta 18 Hacer
@@ -17,7 +17,7 @@ Algoritmo ejercicio4
 		Si eleccion=2 Entonces
 			Para i<-0 Hasta 18 Hacer
 				Si matriz[i]%7=0 Entonces
-					Escribir matriz[i]
+					Escribir matriz[i]," "
 				FinSi
 			Fin Para
 		FinSi
