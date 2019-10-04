@@ -35,13 +35,15 @@ Realiza un programa que pinte un reloj de arena relleno hecho de asteriscos. El 
 
 Ejemplo:
 Por favor, introduzca la altura del reloj de arena: 7 
-````*******
+```
+*******
  *****
   ***
    *
   ***
  *****
-*******```
+*******
+```
 
 EJERCICIO 4 [(ej4.psc)](https://github.com/fjaviercarandec/Programacion_DAW/blob/master/UD1-Pseudocodigo/U1_T1/ej4.psc)
 ---------------------
@@ -51,7 +53,8 @@ Escribe un programa que rellene un array de 20 elementos con números enteros al
 
 Ejemplo:
 159 204 20 250 178 90 353 32 229 357 224 54 260 310 140 249 335 326 223 13
-¿Qué números quiere resaltar? (1 – los múltiplos de 5, 2 – los múltiplos de 7): 1
+¿Qué números quiere resaltar? 
+(1 – los múltiplos de 5, 2 – los múltiplos de 7): 1
 159 204 [20] [250] 178 [90] 353 32 229 357 224 54 [260] [310] [140] 249 [335] 326 223 13
 
 **NOTA:** Utilizar las funciones de pseint para generar los número aleatorios
