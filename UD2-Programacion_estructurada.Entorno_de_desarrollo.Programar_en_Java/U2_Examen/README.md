@@ -1,143 +1,110 @@
 # Examen U2
 
-Ejercicio 1 (Ex1.java):
+Ejercicio 1 (Ejercicio1.java):
 ------------
 
-Con motivo de la celebración del día de la mujer, el 8 de marzo, nos han encargado
-realizar un programa que pinte un 8 por pantalla usando la letra M. Se pide al usuario
-la altura, que debe ser un número entero impar mayor o igual que 5. Si el número
-introducido no es correcto, el programa deberá mostrar un mensaje de error. A
-continuación, se muestran algunos ejemplos. La anchura de la figura siempre será de 6
-caracteres.
+Escribe un programa que pinte por pantalla un par de calcetines, de los que se ponen al lado del árbol de Navidad para que Papá Noel deje sus regalos.
+El usuario debe introducir la altura. Suponemos que el usuario introduce una altura mayor o igual a 4. Observa que la talla de los calcetines y la distancia
+que hay entre ellos (dos espacios) no cambia, lo único que varía es la altura.
 
 **Ejemplo 1:**
 ```
-Por favor, introduzca la altura (número impar mayor o igual a 5): 8
+Introduzca la altura de los calcetines: 6
 
-La altura introducida no es correcta.
-```
-**Ejemplo 2:**
-```
-Por favor, introduzca la altura (número impar mayor o igual a 5): 3
-
-La altura introducida no es correcta
-```
-**Ejemplo 3:**
-```
-Por favor, introduzca la altura (número impar mayor o igual a 5): 5
-
-MMMMMM
-M    M
-MMMMMM
-M    M
-MMMMMM
+***     ***
+***     ***
+***     ***
+***     ***
+******  ******
+******  ******
 ```
 
-**Ejemplo 4:**
-```
-Por favor, introduzca la altura (número impar mayor o igual a 5): 9
-
-MMMMMM
-M    M
-M    M
-M    M
-MMMMMM
-M    M
-M    M
-M    M
-MMMMMM
-```
-
-Ejercicio 2 (Ex2.java):
+Ejercicio 2 (Ejercicio2.java):
 ------------
 
-Escribe un programa que permita partir un número introducido por teclado en dos
-partes. Las posiciones se cuentan de izquierda a derecha empezando por
-el 1. Suponemos que el usuario introduce correctamente los datos, es decir, el número
-introducido tiene dos dígitos como mínimo y la posición en la que
-se parte el número está entre 2 y la longitud del número. No se permite en este
-ejercicio el uso de funciones de manejo de String (por ej. para extraer
-subcadenas dentro de una cadena).
-
-**Ejemplo:**
-```
-Por favor, introduzca un número entero positivo: 406783
-
-Introduzca la posición a partir de la cual quiere partir el número: 5
-
-Los números partidos son el 4067 y el 83.
-```
-
-Ejercicio 3 (Ex3.java):
-------------
-
-Realiza un programa que diga los dígitos que aparecen y los que no aparecen en un
-número entero introducido por teclado. El orden es el que se muestra en
-los ejemplos. Utiliza el tipo long para que el usuario pueda introducir números
-largos.
+Realizar un programa que dado un número que se solicita la usuario por consola eliminará de ese número de ese número 
+todos los 0 y todos los 8 indicando adicionalmente cuántos números ha eliminado.Deberá solicitar el número mientras que
+el número introducido no sea positivo.
 
 **Ejemplo 1:**
 ```
-Introduzca un número entero: 67706
+Introduzca un número entero positivo: 34084091
+Número resultado: 34491
+Dígitos eliminados: 3
+```
 
-Dígitos que aparecen en el número: 0 6 7
+**Ejemplo 2:**
+```
+Introduzca un número entero positivo: 84123
+Número resultado: 4123
+Dígitos eliminados: 1
+```
+**NOTA: NO SE PUEDEN UTILIZAR FUNCIONES DE CADENAS**
 
-Dígitos que no aparecen: 1 2 3 4 5 8 9
+Ejercicio 3 (Ejercicio3.java):
+------------
+
+Ahora que se acerca la notería de Navidad queremos saber si un número va a proporcionar suerte a un usuario. Solicitaremos a un usuario cuáles son sus 3 números favoritos y para calcular  si un número le va a dar suerte dicho número tendrá más ocurrencias de esos números que de los demás.
+
+**Ejemplo 1:**
+```
+Introduzca sus números favoritos:
+3
+5
+7
+Introduzca el número de la lotería: 74123
+Ese número no le va a dar suerte
 ```
 **Ejemplo 2:**
 ```
-Introduzca un número entero: 555
-
-Dígitos que aparecen en el número: 5
-
-Dígitos que no aparecen: 1 2 3 4 6 7 8 9
-```
-**Ejemplo 3:**
-```
-Introduzca un número entero: 9876543210
-
-Dígitos que aparecen en el número: 0 1 2 3 4 5 6 7 8 9
-
-Dígitos que no aparecen:
-```
-**Ejemplo 4:**
-```
-Introduzca un número entero: 13247721
-
-Dígitos que aparecen en el número: 1 2 3 4 7
-
-Dígitos que no aparecen: 0 5 6 8 9
+Introduzca sus números favoritos:
+3
+5
+7
+Introduzca el número de la lotería: 55173
+Ese número le va a dar suerte.
 ```
 
-Ejercicio 4 (Ex4.java):
+Ejercicio 4 (Ejercicio4.java):
 ------------
-Realiza un programa que calcule el máximo, el mínimo y la media de una serie de
-números enteros positivos introducidos por teclado. El programa terminará
-cuando el usuario introduzca un número primo. Este último número no se tendrá en
-cuenta en los cálculos. El programa debe indicar también cuántos
-números ha introducido el usuario (sin contar el primo que sirve para salir).
+Escribe un programa que pida un número entero positivo por teclado y que
+muestre a continuación los 5 números consecutivos a partir del número
+introducido. Al lado de cada número se debe indicar si se trata de un primo
+o no.
 
 **Ejemplo:**
 ```
-Por favor, vaya introduciendo números enteros positivos. Para terminar, introduzca un
-número primo:
-6
-8
-15
-12
-23
-Ha introducido 4 números no primos.
-Máximo: 15
-Mínimo: 6
-Media: 10.25
+Por favor, introduzca un número entero positivo: 17
+17 es primo
+18 no es primo
+19 es primo
+20 no es primo
+21 no es primo
 ```
 
-Ejercicio 5 (Ex5.java):
+Ejercicio 5 (Ejercicio5.java):
 ------------
-Dada una cadena mostrar por pantalla la cantidad de vocales que tiene.
+Escribir un programa que incremente la hora de un reloj tantos segundos como le solicitemos mostrando cada vez la hora nueva.
+Se solicitará al usuario por teclado las horas, los minutos y los segundos y el número de segundos que se quiere aumentar la hora.
+
+Supondremos que el usuario siempre introduce valores correctos.
 
 **Ejemplo:**
+```
+Introducza horas: 13
+Introduzca minutos: 59
+Introduzca segundos: 51
+Introduzca segundos a incrementar: 10
 
-**_Entrada:_** cad = "Hola tu"
-
-**_Salida:_** La cantidad de vocales es 3
+Aumentando la hora...
+13:59:52
+13:59:53
+13:59:54
+13:59:55
+13:59:56
+13:59:57
+13.59:58
+13:59:59
+14:00:00
+14:00:01
+```
