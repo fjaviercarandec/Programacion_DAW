@@ -18,7 +18,6 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo { " +
-                "Nombre = " + nombre + ", NumeroMaxPasajeros = " + numMax + " }";
+        return "Nombre = " + nombre + ", NumeroMaxPasajeros = " + numMax + " }";
     }
 }
