@@ -29,7 +29,6 @@ public class Rpg{
     }
 
     public void añadirPersonaje(Personaje personaje) {
-        boolean completo = false;
         if (this.personajes.length < 10) {
             for (int i = 0; i < this.personajes.length; i++) {
                 if (this.personajes[i] == null) {
@@ -82,21 +81,11 @@ public class Rpg{
     }
 
     public String hayGanador() {
-        int cont = 0;
-        String res = "";
-        for (int i = 0; i < this.personajes.length; i++) {
-            if (this.personajes[i].getEnergia() > 0) {
-                cont++;
-            }
+        if (this.personajes.length == 1) {
+            return Arrays.deepToString(this.personajes);
+        } else {
+            return "Aun no hay ganador.";
         }
-        if (cont==1) {
-            for (int i = 0; i < this.personajes.length; i++) {
-                if (this.personajes[i].getEnergia() > 0) {
-                    res = this.personajes[i].toString();
-                }
-            }
-        }
-        return res;
     }
 
 }
