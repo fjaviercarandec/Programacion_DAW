@@ -1,4 +1,4 @@
-package examen;
+package examenHerenciaInterface;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +18,6 @@ public class Main {
         warcraft.añadirPersonaje(ena);
         warcraft.añadirPersonaje(war);
 
-
         //El mago realiza encantamientos
         wiz.desencantar(elf);
         wiz.encantar(ena);
@@ -29,8 +28,10 @@ public class Main {
         System.out.println(war.atacarPersonaje(ena));
         System.out.println(ena.atacarPersonaje(ena));
         System.out.println(war.atacarPersonaje(elf));
+        System.out.println(war.atacarPersonaje(elf));
 
         //Eliminamos los muertos si es que hay
+        warcraft.borrarMuertos();
         warcraft.borrarMuertos();
 
         //Mostramos el campo de batalla

@@ -1,4 +1,4 @@
-package examen;
+package examenHerenciaInterface;
 
 import java.util.Comparator;
 

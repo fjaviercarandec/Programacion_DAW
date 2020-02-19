@@ -1,4 +1,4 @@
-package examen;
+package examenHerenciaInterface;
 
 public class Mago extends Hombre implements Magia{
     private int barba;
@@ -14,16 +14,6 @@ public class Mago extends Hombre implements Magia{
 
     public void setBarba(int barba) {
         this.barba = barba;
-    }
-
-    @Override
-    public void encantar(Personaje personaje) {
-        personaje.setEncantado(true);
-    }
-
-    @Override
-    public void desencantar(Personaje personaje) {
-        personaje.setEncantado(false);
     }
 
     @Override

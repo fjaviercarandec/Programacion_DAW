@@ -1,4 +1,4 @@
-package examen;
+package examenHerenciaInterface;
 
 public abstract class Personaje implements Comparable{
     private String nombre;

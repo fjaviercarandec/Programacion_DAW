@@ -1,4 +1,4 @@
-package examen;
+package examenHerenciaInterface;
 
 public class Orco extends Personaje implements Atacar{
     private double tonelaje;
@@ -18,7 +18,7 @@ public class Orco extends Personaje implements Atacar{
 
     @Override
     public String atacarPersonaje(Personaje personaje) {
-        if (personaje.getNombre().equals(getNombre())) {
+        if (personaje.getClass().equals(getClass())) {
             return "Te atacas tu mismo. No surge efecto.";
         } else {
             if (personaje.isEncantado()) {

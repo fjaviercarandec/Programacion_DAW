@@ -1,4 +1,4 @@
-package examen;
+package examenHerenciaInterface;
 
 public class Guerrero extends Hombre implements Atacar{
     private int edad;
@@ -18,7 +18,7 @@ public class Guerrero extends Hombre implements Atacar{
 
     @Override
     public String atacarPersonaje(Personaje personaje) {
-        if (personaje.getNombre().equals(getNombre())) {
+        if (personaje.getClass().equals(getClass())) {
             return "Te atacas tu mismo. No surge efecto.";
         } else {
             if (personaje.isEncantado()) {

@@ -1,4 +1,4 @@
-package examen;
+package examenHerenciaInterface;
 
 public abstract class Hombre extends Personaje {
 

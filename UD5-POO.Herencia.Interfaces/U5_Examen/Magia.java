@@ -1,6 +1,10 @@
-package examen;
+package examenHerenciaInterface;
 
 public interface Magia {
-    public void encantar(Personaje personaje);
-    public void desencantar(Personaje personaje);
+    default void encantar(Personaje personaje) {
+        personaje.setEncantado(true);
+    }
+    default void desencantar(Personaje personaje) {
+        personaje.setEncantado(false);
+    }
 }

@@ -1,4 +1,4 @@
-package examen;
+package examenHerenciaInterface;
 
 import java.util.Arrays;
 
@@ -29,40 +29,39 @@ public class Rpg{
     }
 
     public void añadirPersonaje(Personaje personaje) {
-        if (this.personajes.length < 10) {
-            for (int i = 0; i < this.personajes.length; i++) {
-                if (this.personajes[i] == null) {
-                    this.personajes[i] = personaje;
-                    break;
+        if (personajes!=null) {
+            if (personajes.length==10) {
+                System.out.println("No se pueden añadir más personajes a la partida");
+            } else {
+                Personaje[] p1 = new Personaje[personajes.length+1];
+                for (int i = 0; i < personajes.length ; i++) {
+                    p1[i] = personajes[i];
                 }
-                if (this.personajes[i] != null && i == this.personajes.length-1 && this.personajes.length < 10) {
-                    Personaje[] aux = new Personaje[this.personajes.length+1];
-                    aux[this.personajes.length+1] = this.personajes[this.personajes.length-1];
-                    this.personajes = aux;
-                }
+                p1[personajes.length] = personaje;
+                personajes = p1;
             }
         } else {
-            System.out.println("Grupo de personajes completo.");
+            personajes = new Personaje[1];
+            personajes[0] = personaje;
         }
-
     }
 
     public void borrarMuertos() {
-        boolean muerto = false;
-        for (int i = 0; i < this.personajes.length; i++) {
-            if (this.personajes[i].getEnergia() <= 0) {
-                muerto = true;
-            }
-            if (muerto && i < this.personajes.length-1) {
-                this.personajes[i] = this.personajes[i+1];
-            } else if (muerto && i == this.personajes.length-1) {
-                Personaje[] aux = new Personaje[this.personajes.length-1];
-                for (int j = 0; j < aux.length; j++) {
-                    aux[j] = this.personajes[j];
-                }
-                this.personajes = aux;
+        int numMuertos = 0;
+        for (int i = 0; i < personajes.length ; i++) {
+            if (personajes[i].getEnergia() <= 0) {
+                numMuertos++;
             }
         }
+        Personaje[] p1 = new Personaje[personajes.length-numMuertos];
+        int j=0;
+        for (int i = 0; i < personajes.length ; i++) {
+            if (personajes[i].getEnergia() > 0) {
+                p1[j] = personajes[i];
+                j++;
+            }
+        }
+        personajes = p1;
     }
 
     public String mostrarEstado() {
@@ -81,11 +80,11 @@ public class Rpg{
     }
 
     public String hayGanador() {
-        if (this.personajes.length == 1) {
-            return Arrays.deepToString(this.personajes);
-        } else {
-            return "Aun no hay ganador.";
+        String res = "Aun no existe ganador.";
+        if (this.personajes.length == 1 && this.personajes[0].getEnergia() > 0) {
+            res = this.personajes[0].getNombre() + " es el ganador.";
         }
+        return res;
     }
 
 }
