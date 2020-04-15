@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+    <pelicula id="001">
+        <nombre>El Hoyo</nombre>
+        <director>Galder Gaztelu-Urrutia</director>
+        <anyo>2020</anyo>
+        <pais>España</pais>
+    </pelicula>
+    <pelicula id="002">
+        <nombre>El Faro</nombre>
+        <director>Robert Eggers</director>
+        <anyo>2020</anyo>
+        <pais>Estados Unidos</pais>
+    </pelicula>
+    <pelicula id="003">
+        <nombre>Parasitos</nombre>
+        <director>Bong Joon-ho</director>
+        <anyo>2019</anyo>
+        <pais>Corea del Sur</pais>
+    </pelicula>
+    <pelicula id="004">
+        <nombre>Perfect Blue</nombre>
+        <director>Satoshi Kon</director>
+        <anyo>1998</anyo>
+        <pais>Japon</pais>
+    </pelicula>
+    <pelicula id="005">
+        <nombre>Paprika</nombre>
+        <director>Satoshi Kon</director>
+        <anyo>2006</anyo>
+        <pais>Japon</pais>
+    </pelicula>
+</peliculas>

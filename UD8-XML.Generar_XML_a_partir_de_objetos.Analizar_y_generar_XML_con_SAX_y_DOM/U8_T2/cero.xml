@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Peliculas>
+    <pelicula id="1">
+        <nombre>El Hoyo</nombre>
+        <director>Galder Gaztelu-Urritia</director>
+        <anyo>2020</anyo>
+        <pais>España</pais>
+    </pelicula>
+    <pelicula id="2">
+        <nombre>El Faro</nombre>
+        <director>Robert Eggers</director>
+        <anyo>2020</anyo>
+        <pais>Estados Unidos</pais>
+    </pelicula>
+    <pelicula id="3">
+        <nombre>Parasitos</nombre>
+        <director>Bong Joon-ho</director>
+        <anyo>2019</anyo>
+        <pais>Corea del Sur</pais>
+    </pelicula>
+    <pelicula id="4">
+        <nombre>Perfect Blue</nombre>
+        <director>Satoshi Kon</director>
+        <anyo>1998</anyo>
+        <pais>Japon</pais>
+    </pelicula>
+    <pelicula id="5">
+        <nombre>Paprika</nombre>
+        <director>Satoshi Kon</director>
+        <anyo>2006</anyo>
+        <pais>Japon</pais>
+    </pelicula>
+    <pelicula id="6">
+        <nombre>Silent Voice</nombre>
+        <director>Naoko Yamada</director>
+        <anyo>2016</anyo>
+        <pais>Japon</pais>
+    </pelicula>
+    <pelicula id="7">
+        <nombre>Akira</nombre>
+        <director>Katsushiro Otomo</director>
+        <anyo>1988</anyo>
+        <pais>Japon</pais>
+    </pelicula>
+    <pelicula id="8">
+        <nombre>Disobedience</nombre>
+        <director>Sebastian Lelio</director>
+        <anyo>2018</anyo>
+        <pais>Brasil</pais>
+    </pelicula>
+    <pelicula id="9">
+        <nombre>Detachment</nombre>
+        <director>Tony Kaye</director>
+        <anyo>2011</anyo>
+        <pais>Estados Unidos</pais>
+    </pelicula>
+    <pelicula id="10">
+        <nombre>Snowpiercer</nombre>
+        <director>Bong Joon-ho</director>
+        <anyo>2013</anyo>
+        <pais>Corea del Sur</pais>
+    </pelicula>
+</Peliculas>

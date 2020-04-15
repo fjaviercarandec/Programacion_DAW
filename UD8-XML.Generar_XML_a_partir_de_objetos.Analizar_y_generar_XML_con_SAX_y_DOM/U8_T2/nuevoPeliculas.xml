@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <pelicula id="007">
+        <nombre>Disobedience</nombre>
+        <director>Sebastian Lelio</director>
+        <anyo>2018</anyo>
+        <pais>Brasil</pais>
+    </pelicula>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <pelicula id="002">
+                
+        <nombre>El Faro</nombre>
+                
+        <director>Robert Eggers</director>
+                
+        <anyo>2020</anyo>
+                
+        <pais>Estados Unidos</pais>
+            
+    </pelicula>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <pelicula id="003">
+                
+        <nombre>Parasitos</nombre>
+                
+        <director>Bong Joon-ho</director>
+                
+        <anyo>2019</anyo>
+                
+        <pais>Corea del Sur</pais>
+            
+    </pelicula>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <pelicula id="004">
+                
+        <nombre>Perfect Blue</nombre>
+                
+        <director>Satoshi Kon</director>
+                
+        <anyo>1998</anyo>
+                
+        <pais>Japon</pais>
+            
+    </pelicula>
+        
+    <!--COMENTARIO AÑADIDO DESDE DOM-->
+    <pelicula id="005">
+                
+        <nombre>Paprika</nombre>
+                
+        <director>Satoshi Kon</director>
+                
+        <anyo>2006</anyo>
+                
+        <pais>Japon</pais>
+            
+    </pelicula>
+    
+    <pelicula id="006">
+        <nombre>Silent Voice</nombre>
+        <director>Naoko Yamada</director>
+        <anyo>2016</anyo>
+        <pais>Japon</pais>
+    </pelicula>
+</peliculas>
