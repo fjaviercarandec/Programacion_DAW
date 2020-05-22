@@ -9,15 +9,10 @@ public class ConexionDB {
     public static Connection getConnection() {
         try {
             if (con == null) {
-                String driver = "com.mysql.jdbc.Driver";
-                String url = "jdbc:mysql://localhost/classicmodels?autoReconnect=true";
-                String pwd = "root";
-                String usr = "root";
-                Class.forName(driver);
-                con = DriverManager.getConnection(url, usr, pwd);
+                con = DriverManager.getConnection("jdbc:mysql://localhost/classicmodels?user=root&password=root");
                 System.out.println("Conexion satisfactoria.");
             }
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return con;
