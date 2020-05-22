@@ -162,7 +162,7 @@ public class MenuAccesoBD {
                     psQuantity.setString(3, prodCode);
                     psQuantity.executeUpdate();
                 } else {
-                    String queryPrice = "SELECT MSRP FROM WHERE productCode = ?";
+                    String queryPrice = "SELECT MSRP FROM products WHERE productCode = ?";
                     PreparedStatement psPrice = con.prepareStatement(queryPrice);
                     psPrice.setString(1, prodCode);
                     ResultSet rsPrice = psPrice.executeQuery();
